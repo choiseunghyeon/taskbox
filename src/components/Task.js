@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 export default function Task({ task: { id, title, state }, onArchiveTask, onPinTask }) {
   return (
-    <div className={`list-item ${state}`}>
+    <div className={`list-item ${state}`} style={{ backgroundColor: "red" }}>
       <label className="checkbox">
-        <input type="checkbox" defaultChecked={state === "TASK_ARCHIVED"} disabled={true} name="checked" style={{ backgroundColor: "red" }} />
+        <input type="checkbox" defaultChecked={state === "TASK_ARCHIVED"} disabled={true} name="checked" />
         <span className="checkbox-custom" onClick={() => onArchiveTask(id)} />
       </label>
       <div className="title">
