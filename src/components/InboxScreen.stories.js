@@ -23,7 +23,7 @@ const Template = args => <PureInboxScreen {...args} />;
 
 export const Default = Template.bind({});
 
-export const Error = Template.bind({});
-Error.args = {
-  error: "Something",
-};
+// export const Error = Template.bind({});
+// Error.args = {
+//   error: "Something",
+// };
