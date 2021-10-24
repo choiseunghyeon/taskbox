@@ -1010,3 +1010,7 @@ a:focus {
   vertical-align: top;
   max-width: 100%;
 }
+
+.blueBackgroundColor {
+  background-color: blue;
+}
